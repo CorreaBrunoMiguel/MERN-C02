@@ -3,6 +3,8 @@ import express from 'express';
 import { IServerConfig } from './utils/config';
 import * as config from '../server_config.json';
 
+import { Routes } from './routes';
+
 export class ExpressServer {
   private static server = null;
   public server_config: IServerConfig = config;
@@ -15,6 +17,11 @@ export class ExpressServer {
     app.get('/ping', (req, res) => {
       res.send('pong');
     });
+
+    const routes = new Routes(app);
+    if (routes) {
+      console.log('Server Routes started for server');
+    }
 
     ExpressServer.server = app.listen(port, () => {
       console.log(
