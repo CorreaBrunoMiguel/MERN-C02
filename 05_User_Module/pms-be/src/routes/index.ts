@@ -1,6 +1,6 @@
 import { Express, Router } from 'express';
 
-import { RoleRoutes } from '../components/roles/role_routes';
+import { RoleRoutes } from '../components/roles/roles_routes';
 import { UserRoutes } from '../components/users/users_routes';
 import { ProjectRoutes } from '../components/projects/projects_routes';
 import { TaskRoutes } from '../components/tasks/tasks_routes';

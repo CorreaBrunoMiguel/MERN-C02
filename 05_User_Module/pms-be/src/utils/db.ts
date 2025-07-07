@@ -3,7 +3,7 @@ import { DataSource, Repository } from 'typeorm';
 import { IServerConfig } from './config';
 import * as config from '../../server_config.json';
 
-import { Roles } from '../components/roles/role_entity';
+import { Roles } from '../components/roles/roles_entity';
 import { Users } from '../components/users/user_entity';
 import { Projects } from '../components/projects/projects_entity';
 import { Tasks } from '../components/tasks/tasks_entity';
